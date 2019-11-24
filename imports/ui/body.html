@@ -1,17 +1,23 @@
 <body>
-    <div class="container">
-      <header>
-        <h1>Daftar Fungsi</h1>
-      </header>
-   
-      <ul>
-        {{#each tasks}}
-          {{> task}}
-        {{/each}}
-      </ul>
-    </div>
-  </body>
+  <div class="container">
+    <header>
+      <h1>Daftar Fungsi</h1>
 
-  <template name="task">
-    <li>{{text}}</li>
-  </template>
+      <form class="new-task">
+        <input type="text" name="text" placeholder="Type to add new tasks" />
+      </form>
+    </header>
+  
+    <ul>
+      {{#each gawais}}
+        {{> gawai}}
+      {{/each}}
+    </ul>
+
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
