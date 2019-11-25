@@ -8,9 +8,9 @@ import './gawai.js';
 import './body.html';
  
 Template.body.helpers({
-  gawais() {
-    return Gawai.find({}, { sort: { createdAt: -1 }, limit: 5 });
-  },
+  // gawais() {
+  //   return Gawai.find({}, { fields: {LAT: 1, LON: 1}, limit: 5 });
+  // },
   tasks() {
     return Tasks.find({}, { sort: { createdAt: -1 } });
   },
